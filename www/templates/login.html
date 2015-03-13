@@ -1,23 +1,22 @@
 <ion-view view-title="Login">
-  <!--<ion-header-bar>-->
-    <!--<ion-nav-buttons side="right">-->
-        <!--<button class="button button-clear" ng-click="closeLogin()">Close</button>-->
-    <!--</ion-nav-buttons>-->
-  <!--</ion-header-bar>-->
-  <ion-content>
-    <form ng-submit="doLogin()">
+  <ion-content class="loginBG" scroll="false">
+    <form ng-submit="doLogin()" style="margin-top: 40%">
       <div class="list">
         <label class="item item-input">
           <span class="input-label">Username</span>
           <input type="text" ng-model="loginData.username">
         </label>
         <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
+          <span class="input-label">Password 1</span>
+          <input type="password" ng-model="loginData.password1">
         </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
+          <label class="item item-input">
+          <span class="input-label">Password 2</span>
+          <input type="password" ng-model="loginData.password2">
+      </label>
+        <!--<label class="item">-->
+          <button class="button button-block button-positive" type="submit" style="margin-top: 40px;">Log in</button>
+        <!--</label>-->
       </div>
     </form>
   </ion-content>

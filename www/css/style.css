@@ -1,1 +1,45 @@
 /* Empty. Add your own CSS if you like */
+.loginBG {
+    background-image: url('/img/background_temp.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.loginBG .item-input {
+    background: transparent;
+    border-color: #000000;
+}
+
+.loginBG .input-label {
+    color: #000000;
+}
+
+.bar.bar-stable {
+    background: rgb(89, 192, 223);
+}
+
+.bar-stable .button.button-clear {
+    color: #ffffff;
+}
+
+.bar.bar-stable .title {
+    color: white;
+}
+
+.menu .scroll-content {
+    background-color: rgb(89, 192, 223);
+}
+
+.menu .item-complex .item-content {
+    background-color: rgb(89, 192, 223);
+}
+
+.menu a.item-content {
+    color: #ffffff;
+}
+
+.menu .item .item-content.activated {
+    background-color: orange;
+}
