@@ -8,8 +8,12 @@
 }
 
 .loginBG .item-input {
-    background: transparent;
+    background-color: rgba(255, 255, 255, 0.3)!important;
     border-color: #000000;
+}
+
+.loginBG .list-inset {
+    background-color: rgba(255, 255, 255, 0.3)!important;
 }
 
 .loginBG .input-label {
@@ -42,4 +46,28 @@
 
 .menu .item .item-content.activated {
     background-color: orange;
+}
+
+.button.button-block {
+    padding: 0px;
+    width: 95%;
+    margin: auto;
+}
+
+/*Mobi-Scroll */
+.mbsc-mobiscroll .dwwr{
+    background: #292829;
+    color: #fff;
+}
+
+.mbsc-mobiscroll .dwb{
+    color: #11C1F3;
+}
+
+.button-custom .icon:before{
+    font-size: 64px !important;
+}
+
+.input-label{
+    font-weight: bold;
 }

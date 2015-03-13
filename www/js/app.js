@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('eNetMobile', ['ionic', 'eNetMobile.controllers'])
+angular.module('eNetMobile', ['ionic', 'mobiscroll-select', 'mobiscroll-datetime', 'mobiscroll-number'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -18,6 +18,11 @@ angular.module('eNetMobile', ['ionic', 'eNetMobile.controllers'])
       StatusBar.styleDefault();
     }
   });
+})
+
+//Overwriting Ionic: Getting rid of the Text next to Back Button
+.config(function($ionicConfigProvider) {
+    $ionicConfigProvider.backButton.previousTitleText(false); //add .text('') to get rid of "Back"
 })
 
 .config(function($stateProvider, $urlRouterProvider) {

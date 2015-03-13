@@ -1,4 +1,4 @@
-angular.module('eNetMobile.controllers', [])
+angular.module('eNetMobile')
     .controller('loginCtrl', function($scope, $ionicModal, $timeout, $state) {
         // Form data for the login modal
         $scope.loginData = {};
