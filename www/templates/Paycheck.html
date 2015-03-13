@@ -1,17 +1,154 @@
 <ion-view view-title="Paycheck">
   <ion-content>
-    <center><h1 style="margin-top: 10px;">Paycheck</h1></center>
-      <div>
-          <label class="item tab item-input item-stacked-label">
-              <span class="input-label" style="max-width: 92%;">Pay Date</span>
-              <input type="text"
-                      name="Pay Date"
-                      mobiscroll-select
-                      mobiscroll-options="{display: 'bottom', theme: 'ios'}"
-                      mobiscroll-instance="integer"
-                      ng-minlength="1">
+    <center><h1 style="margin-top: 10px;">John E. Doe</h1></center>
+      <div class="list">
+
+          <label class="item item-input item-select">
+              <div class="input-label">
+                  Pay Date
+              </div>
+              <select>
+                  <option selected>01/01/2000</option>
+                  <option>01/21/2000</option>
+                  <option>02/01/2000</option>
               </select>
           </label>
+
       </div>
+      <div class="card">
+          <div class="item item-divider">
+              <label class="item item-input item-select">
+                  <div class="input-label">
+                      Time Reporting Code
+                  </div>
+                  <select>
+                      <option selected>normal</option>
+                      <option>overtime</option>
+                      <option>vacation</option>
+                  </select>
+              </label>
+          </div>
+          <!--Calendar-->
+          <form name="timeSheet" novalidate="">
+              <div class="form">
+                  <div class="item">
+                      <div class="row">
+                         <div class="col col-33" style="padding-left: 10%;">Mon</div>
+                          <div class="col col-33">01/20</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Tue</div>
+                          <div class="col col-33">01/21</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Wed</div>
+                          <div class="col col-33">01/22</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Thu</div>
+                          <div class="col col-33">01/23</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Fri</div>
+                          <div class="col col-33">01/24</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Sat</div>
+                          <div class="col col-33">01/25</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Sun</div>
+                          <div class="col col-33">01/26</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+
+
+
+                  <div class="item item-divider"></div>
+
+
+
+
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Mon</div>
+                          <div class="col col-33">01/27</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Tue</div>
+                          <div class="col col-33">01/28</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Wed</div>
+                          <div class="col col-33">01/29</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Thu</div>
+                          <div class="col col-33">01/30</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Fri</div>
+                          <div class="col col-33">01/31</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Sat</div>
+                          <div class="col col-33">02/01</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col col-33" style="padding-left: 10%;">Sun</div>
+                          <div class="col col-33">02/02</div>
+                          <input class="col col-33" type="text" placeholder="0.00"style="border: 1px solid rgb(221, 221, 221);">
+                      </div>
+                  </div>
+              </div>
+        </form>
+      </div>
+
+      <button class="button button-stable" style="margin: 0 auto; display: block; margin-bottom: 30px;">
+          <i class="icon ion-plus-round"></i>
+      </button>
+      <button class="button button-full button-positive" style="margin-bottom: 0px;">
+          Submit
+      </button>
+
   </ion-content>
 </ion-view>
