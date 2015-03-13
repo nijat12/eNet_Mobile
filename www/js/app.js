@@ -38,20 +38,20 @@ angular.module('eNetMobile', ['ionic', 'eNetMobile.controllers'])
     }
   })
 
-  .state('app.browse', {
-    url: "/browse",
+  .state('app.paycheck', {
+    url: "/paycheck",
     views: {
       'menuContent': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/paycheck.html"
       }
     }
   })
-    .state('app.playlists', {
-      url: "/playlists",
+    .state('app.submitTime', {
+      url: "/submitTime",
       views: {
         'menuContent': {
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/submitTime.html",
+          controller: 'timeCtrl'
         }
       }
     })
@@ -63,7 +63,7 @@ angular.module('eNetMobile', ['ionic', 'eNetMobile.controllers'])
     })
 
   .state('app.single', {
-    url: "/playlists/:playlistId",
+    url: "/submitTime/:playlistId",
     views: {
       'menuContent': {
         templateUrl: "templates/playlist.html",

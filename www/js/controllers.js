@@ -23,7 +23,7 @@ angular.module('eNetMobile.controllers', [])
         // Perform the login action when the user submits the login form
         $scope.doLogin = function() {
             console.log('Doing login', $scope.loginData);
-            $state.go("app.playlists")
+            $state.go("app.paycheck")
             // Simulate a login delay. Remove this and replace with your login
             // code if using a login system
             $timeout(function() {
@@ -32,7 +32,7 @@ angular.module('eNetMobile.controllers', [])
         };
     })
 
-    .controller('PlaylistsCtrl', function($scope) {
+    .controller('timeCtrl', function($scope) {
       $scope.playlists = [
         { title: 'Reggae', id: 1 },
         { title: 'Chill', id: 2 },
