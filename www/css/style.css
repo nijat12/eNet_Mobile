@@ -86,3 +86,12 @@ form .item {
     border-radius: 2%;
     margin-bottom: 30px;
 }
+
+.buttons i {
+    font-size: 35px;
+    color: white;
+}
+
+.bar .buttons-right span {
+    margin-right: 5px;
+}

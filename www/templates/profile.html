@@ -1,0 +1,28 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-stable">
+        <div class="title">Profile</div>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeModal()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content scroll="false">
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">First Name</span>
+                <input type="text" ng-model="profile.fName">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Last Name</span>
+                <input type="text" ng-model="profile.lName">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Email</span>
+                <input type="text" ng-model="profile.email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Phone</span>
+                <input type="text" ng-model="profile.phone">
+            </label>
+        </div>
+    </ion-content>
+</ion-modal-view>

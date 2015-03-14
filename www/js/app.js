@@ -31,7 +31,8 @@ angular.module('eNetMobile', ['ionic', 'mobiscroll-select', 'mobiscroll-datetime
   .state('app', {
     url: "/app",
     abstract: true,
-    templateUrl: "templates/menu.html"
+    templateUrl: "templates/menu.html",
+        controller: 'menuCtrl'
   })
 
   .state('app.search', {

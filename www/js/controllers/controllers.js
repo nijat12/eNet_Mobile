@@ -44,4 +44,32 @@ angular.module('eNetMobile')
     })
 
     .controller('PlaylistCtrl', function($scope, $stateParams) {
+    })
+
+    .controller('menuCtrl', function($scope, $ionicModal) {
+        $scope.profile = {
+            fName: '',
+            lName: '',
+            email: '',
+            phone: ''
+        };
+
+        $ionicModal.fromTemplateUrl('templates/profile.html', {
+            scope: $scope,
+            animation: 'slide-in-up'
+        }).then(function(modal){
+            $scope.modal = modal
+        });
+
+        $scope.openModal = function() {
+            $scope.modal.show();
+        };
+
+        $scope.closeModal = function() {
+            $scope.modal.hide();
+        };
+
+        $scope.$on('$destroy', function() {
+            $scope.modal.remove();
+        });
     });
