@@ -33,15 +33,25 @@
 }
 
 .menu .scroll-content {
-    background-color: rgb(89, 192, 223);
+    /*background-color: rgb(89, 192, 223);*/
+    background-image: url('/img/background_temp.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.menu .item {
+    background: transparent;
 }
 
 .menu .item-complex .item-content {
-    background-color: rgb(89, 192, 223);
+    background-color: rgba(89, 192, 223, 0.0) !important;
 }
 
 .menu a.item-content {
     color: #ffffff;
+    font-weight: bold;
 }
 
 .menu .item .item-content.activated {
