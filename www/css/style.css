@@ -77,7 +77,7 @@ input {
 }
 
 /*Distance between the timeSheet hour input rows*/
-form .item {
+.p0 {
     padding: 0px;
 }
 
@@ -96,10 +96,26 @@ form .item {
     margin-right: 5px;
 }
 
-.col-33.ct {
+.ct {
     text-align: center;
 }
 
-.col-33.pl {
+.pl {
     padding-left: 10%;
+}
+
+.pl5 {
+    padding-left: 5%;
+}
+
+.col-33.b {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.tr {
+    text-align: right;
+}
+
+.center {
+    margin: 0 auto; display: block;
 }
