@@ -95,3 +95,11 @@ form .item {
 .bar .buttons-right span {
     margin-right: 5px;
 }
+
+.col-33.ct {
+    text-align: center;
+}
+
+.col-33.pl {
+    padding-left: 10%;
+}
