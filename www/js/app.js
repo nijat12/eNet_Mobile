@@ -68,15 +68,16 @@ angular.module('eNetMobile', ['ionic', 'mobiscroll-select', 'mobiscroll-datetime
       controller: 'loginCtrl'
     })
 
-  .state('app.single', {
-    url: "/submitTime/:playlistId",
-    views: {
-      'menuContent': {
-        templateUrl: "templates/playlist.html",
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
-  // if none of the above states are matched, use this as the fallback
+    .state('app.searchResult', {
+        url: "/search/searchResult",
+        views: {
+            'menuContent': {
+                templateUrl: "templates/searchResult.html",
+                controller: 'searchResultCtrl'
+            }
+        }
+    });
+
+        // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 });

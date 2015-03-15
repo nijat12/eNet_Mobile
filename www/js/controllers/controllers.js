@@ -43,8 +43,10 @@ angular.module('eNetMobile')
       ];
     })
 
-    .controller('PlaylistCtrl', function($scope, $stateParams) {
+    .controller('searchResultCtrl', function($scope, $stateParams) {
+
     })
+
 
     .controller('menuCtrl', function($scope, $ionicModal) {
         $scope.profile = {

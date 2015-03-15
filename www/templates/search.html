@@ -1,5 +1,25 @@
 <ion-view view-title="Search">
   <ion-content>
-    <h1>Search</h1>
+      <div class="list">
+          <label class="item item-input">
+              <span class="input-label">First Name</span>
+              <input type="text" ng-model="profile.fName">
+          </label>
+          <label class="item item-input">
+              <span class="input-label">Last Name</span>
+              <input type="text" ng-model="profile.lName">
+          </label>
+          <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input type="text" ng-model="profile.email">
+          </label>
+          <label class="item item-input">
+              <span class="input-label">Phone</span>
+              <input type="text" ng-model="profile.phone">
+          </label>
+      </div>
+      <button class="button button-full button-positive" style="margin-bottom: 0px;" nav-direction="forward" ui-sref="app.searchResult">
+          Search
+      </button>
   </ion-content>
 </ion-view>
